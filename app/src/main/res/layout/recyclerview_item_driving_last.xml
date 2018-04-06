@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_margin="0dp">
+
+    <TextView
+        android:id="@+id/driving_list_title_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정류장이름"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:textAppearance="@style/stop_lsit_text"
+        android:layout_toLeftOf="@+id/line_icon_l"
+        />
+
+    <ImageView
+        android:id="@+id/line_icon_l"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/last" />
+
+    <ImageView
+        android:id="@+id/driving_list_circle_l"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/line_icon_l"
+        android:src="@drawable/full_green_circle" />
+
+    <ImageView
+        android:id="@+id/driving_list_location_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/check"/>
+
+
+</RelativeLayout>

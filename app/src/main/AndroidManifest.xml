@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bus.sa.isl.busstop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Set.MainContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activity.DriverListActivity" />
+        <activity android:name=".Activity.DriverSearchActivity" />
+        <activity android:name=".Activity.DriverWaitActivity" />
+        <activity android:name=".Activity.AckDriverActivity"></activity>
+        <activity android:name=".Activity.FindDialogActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.NoticeWirteActivity" />
+        <activity android:name=".Activity.MapsActivity" />
+        <activity android:name=".Activity.JoinActivity" />
+        <activity android:name=".Activity.DrivingActivity" />
+        <activity android:name=".Activity.LiningDetailListActivity" />
+        <activity android:name=".Activity.NoticeDetailActivity" />
+        <activity android:name=".TestActivity">
+
+        </activity>
+        <activity android:name=".Activity.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".DrivingService" />
+
+        <activity
+            android:name=".Activity.LiningDetailMapActivity"
+            android:label="@string/title_activity_drive_detail_map" />
+    </application>
+
+</manifest>

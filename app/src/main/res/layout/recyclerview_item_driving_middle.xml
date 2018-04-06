@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp">
+
+    <TextView
+        android:id="@+id/driving_list_title_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/line_icon_m"
+        android:text="정류장이름"
+        android:textAppearance="@style/stop_lsit_text" />
+
+    <ImageView
+        android:id="@+id/line_icon_m"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/middle" />
+
+    <ImageView
+        android:id="@+id/driving_list_circle_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/driving_list_title_m"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/line_icon_m"
+        android:src="@drawable/full_green_circle"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/driving_list_location_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/check" />
+
+
+</RelativeLayout>

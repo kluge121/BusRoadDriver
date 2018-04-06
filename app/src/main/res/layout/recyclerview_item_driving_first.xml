@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/driving_list_title_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/line_icon_f"
+        android:text="정류장이름"
+        android:textAppearance="@style/stop_lsit_text" />
+
+    <ImageView
+        android:id="@+id/line_icon_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/first" />
+
+    <ImageView
+        android:id="@+id/driving_list_location_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/driving_list_circle_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/line_icon_f"
+        android:src="@drawable/full_green_circle"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

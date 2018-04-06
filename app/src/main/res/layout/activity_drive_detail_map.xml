@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.78"
+        android:background="@color/mainblue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+            <ImageButton
+                android:id="@+id/lining_detail_map_backkey"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/lining_detail_map_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:text="노선이름"
+                android:textAppearance="@style/ToolbarTextStyle" />
+
+            <ImageButton
+                android:id="@+id/lining_detail_map_refresh"
+                android:layout_width="24dp"
+                android:background="@null"
+                android:layout_height="24dp"
+                android:src="@drawable/refresh"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        tools:context="bus.sa.isl.busstop.Activity.LiningDetailMapActivity" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/notice_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/mainblue"
+        android:padding="0dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp">
+
+            <ImageButton
+                android:id="@+id/notice_detail_backkey"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:text="공지사항"
+                android:textAppearance="@style/ToolbarTextStyle" />
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/notice_detail_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="수정"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/notice_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice_detail_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="글제목"
+        android:textAppearance="@style/notice_title" />
+
+    <TextView
+        android:id="@+id/notice_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/notice_detail_title"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:text="2015-03-23"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/notice_detail_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notice_detail_date"
+        android:layout_marginTop="30dp"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="글 내용들입니다. "
+        android:textAppearance="@style/notice_contents" />
+
+
+</RelativeLayout>
